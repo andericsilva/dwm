@@ -20,9 +20,8 @@ while true; do
     sleep 1s    # atualiza a cada 1 segundo
 done &
 
-#alarme
-alarm-clock-applet
+# alarme
+setsid alarm-clock-applet &
 
-# papel de parede
-#nitrogen --restore
-```
+# wallpaper
+setsid nitrogen --restore &
